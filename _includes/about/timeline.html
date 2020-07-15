@@ -32,6 +32,9 @@
               {% endfor %}
             </ul>
           {%- endif -%}
+		  {%- if item.github -%}
+			  <a href="{{ item.github }}"><b>Github</b></a> 
+          {%- endif -%}
           {%- if item.tools -%}
           <p id="tools" class="card-text">
             {%- for tool in item.tools -%}
